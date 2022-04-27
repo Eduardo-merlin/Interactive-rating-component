@@ -7,6 +7,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
 }
 
 .main_content {
@@ -19,87 +20,171 @@ html {
 }
 
 .card_content {
-    border: solid blue 2px;
     width: 40rem;
     height: 40rem;
+    padding: 3rem;
     display: flex;
+    position: relative;
     flex-direction: column;
     border-radius: 50px;
     overflow: hidden;
+    background-color: hsl(213, 19%, 18%);
 }
 
 .img_wrapper {
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 2rem;
     background-color: hsl(213, 19%, 18%);
-    border: solid green 2px;
 }
 
 #star_icon {
     width: 4rem;
     height: 4rem;
-    border: dashed yellow 2px;
     padding: 1rem;
     border-radius: 50%;
+    background-color: hsl(216, 12%, 54%, 0.2);
 }
 
 .text_content {
-    border: solid yellow 2px;
     height: 50vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    font-family: 'Overpass', sans-serif;
+    padding-top: 2rem;
     color: hsl(0, 0%, 100%);
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
+}
+
+.text_content_title {
+    margin-bottom: 2rem;
+}
+
+.text_content_paragraph {
+    opacity: 0.4;
+    font-weight: bold;
 }
 
 .rating_wrapper {
-    border: 2px solid purple;
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 100px;
 }
 
 .button_wrapper {
-    border: 1px solid greenyellow;
     height: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
 }
 
 .button {
-    border-radius: 100px;
+    border-radius: 50%;
     width: 5rem;
     height: 5rem;
-    background-color: hsl(213, 19%, 18%);
+    background-color: hsl(216, 12%, 54%, 0.2);
     color: hsl(217, 12%, 63%);
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
 }
 
 .button_sub {
     border-radius: 50px;
-    width: 32rem;
+    width: 100%;
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
-}
-
-.button:hover {
-    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 .button_sub:hover {
     cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.active:hover {
+    background-color: hsl(25, 97%, 53%, 0.7);
+}
+
+.content_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(213, 19%, 18%);
+    /* border: 1px solid red; */
+}
+
+.card_image {
+    width: 100%;
+    height: 12rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.final_rating {
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: hsl(25, 97%, 53%, 0.8);
+    border-radius: 50px;
+    background-color: hsl(216, 12%, 54%, 0.1);
+}
+
+.thanks_wrapper {
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text_paragraph {
+    width: 43vh;
+    height: 70vh;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+#rate_selected {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
